@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+@media print {
+  /* Hide non-printable UI elements */
+  nav,
+  footer,
+  header,
+  .print\:hidden,
+  button:not(.print\:show) {
+    display: none !important;
+  }
+
+  body, html {
+    background: #ffffff !important;
+    color: #000000 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    font-size: 12pt;
+  }
+
+  /* Expand printable report card to full page width */
+  #report-print-area,
+  .printable-area {
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 20px !important;
+    border: none !important;
+    box-shadow: none !important;
+    background: #ffffff !important;
+  }
+
+  /* Prevent awkward page cuts */
+  .break-inside-avoid,
+  #report-print-area > div {
+    page-break-inside: avoid;
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Zila AI Toolkit",
+  "description": "Evidence-Based AI Readiness Assessment, Strategic Analytics, and Transformation Platform for K–12 Schools",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
